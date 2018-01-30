@@ -6,7 +6,7 @@
 //solution 1
 class uniquePaths {
 	static int uniquePaths(int m, int n) {
-		if (m <= 0 || n <= 0) {
+		if ((m <= 0) || (n <= 0)) {
 			throw new IllegalArgumentException("");
 		}
 		int[][] result = new int[m][n];
@@ -30,7 +30,7 @@ class uniquePaths {
 //solution 2
 class uniquePaths {
 	static int uniquePaths(int m, int n) {
-		if (m <= 0 || n <= 0) {
+		if ((m <= 0) || (n <= 0)) {
 			throw new IllegalArgumentException("");
 		}
 		int[] array = new int[n];
@@ -51,10 +51,10 @@ class uniquePaths {
 //solution 3
 class uniquePaths {
 	static int uniquePaths(int m, int n) {
-		if (m <= 0 || n <= 0) {
+		if ((m <= 0) || (n <= 0)) {
 			throw new IllegalArgumentException("");
 		}
-		if (m == 1 || n == 1) {
+		if ((m == 1) || (n == 1)) {
 			return 1;
 		}
 		return uniquePaths(m - 1, n) + uniquePaths(m, n - 1);

@@ -7,7 +7,7 @@
 //solution 1
 class searchInRotatedSortedArray {
 	static int search(int[] nums, int target) {
-		if (nums == null || nums.length == 0) {
+		if ((nums == null) || (nums.length == 0)) {
 			throw new IllegalArgumentException();
 		}
 		int start = 0;

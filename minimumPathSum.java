@@ -5,7 +5,7 @@
 //solution 1
 class minimumPathSum {
 	static int minPathSum(int[][] grid) {
-		if (grid == null || grid.length == 0 || grid[0] == null || grid[0].length == 0) {
+		if ((grid == null) || (grid.length == 0) || (grid[0] == null) || (grid[0].length == 0)) {
 			throw new IllegalArgumentException("");
 		}
 		for (int i = 1; i <= grid.length - 1; i++) {

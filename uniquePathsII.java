@@ -15,7 +15,7 @@
 //solution 1
 public class uniquePathsII {
 	static int uniquePathsWithObstacles(int[][] obstacleGrid) {
-		if (obstacleGrid == null || obstacleGrid.length == 0) {
+		if ((obstacleGrid == null) || (obstacleGrid.length == 0)) {
 			return -1;
 		}
 		int m = obstacleGrid.length;

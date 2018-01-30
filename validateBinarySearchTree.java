@@ -1,9 +1,9 @@
 //Validate Binary Search Tree
 //Given a binary tree, determine if it is a valid binary search tree (BST).
 //Assume a BST is defined as follows:
-//•   The left subtree of a node contains only nodes with keys less than the node's key.
-//•   The right subtree of a node contains only nodes with keys greater than the node's key.
-//•   Both the left and right subtrees must also be binary search trees.
+//鈥�   The left subtree of a node contains only nodes with keys聽less than聽the node's key.
+//鈥�   The right subtree of a node contains only nodes with keys聽greater than聽the node's key.
+//鈥�   Both the left and right subtrees must also be binary search trees.
 
 //solution 1
 class validateBinarySearchTree {
@@ -21,7 +21,7 @@ class validateBinarySearchTree {
 		if (root == null) {
 			return true;
 		}
-		return root.value > min && root.value < max && DFS(root.left, min, root.value) && DFS(root.right, root.value, max);
+		return (root.value > min) && (root.value < max) && DFS(root.left, min, root.value) && DFS(root.right, root.value, max);
 	}
 	static boolean isValid(TreeNode root) {
 		return DFS(root, Integer.MIN_VALUE, Integer.MAX_VALUE);

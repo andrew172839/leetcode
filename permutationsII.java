@@ -13,7 +13,7 @@ class permutationsII {
 		num[j] = temp;
 	}
 	static void reverse(int[] num, int i, int j) {
-		while (i < j) {
+		while (i <= j - 1) {
 			swap(num, i, j);
 			i++;
 			j--;
@@ -26,7 +26,7 @@ class permutationsII {
 		int i = num.length - 2;
 		while (true) {
 			if (num[i] < num[i + 1]) {
-				int j = num.length -1;
+				int j = num.length - 1;
 				while (num[i] >= num[j]) {
 					j--;
 				}

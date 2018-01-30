@@ -5,7 +5,7 @@
 //solution 1
 class removeElement {
 	static int removeElement(int A[], int element) {
-		if (A == null || A.length == 0) {
+		if ((A == null) || (A.length == 0)) {
 			throw new IllegalArgumentException();
 		}
 		int result = 0;

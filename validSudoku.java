@@ -12,7 +12,7 @@ class validSudoku {
 		for (int i = 0; i <= 8; i++) {
 			HashSet<Character> set1 = new HashSet<Character>();
 			for (int j = 0; j <= 8; j++) {
-				if (broad[i][j] != '.' && set1.contains(broad[i][j])) {
+				if ((broad[i][j] != '.') && (set1.contains(broad[i][j]))) {
 					return false;
 				}
 				else {
@@ -23,7 +23,7 @@ class validSudoku {
 		for (int j = 0; j <= 8; j++) {
 			HashSet<Character> set2 = new HashSet<Character>();
 			for (int i = 0; i <= 8; i++) {
-				if (broad[i][j] != '.' && set2.contains(broad[i][j])) {
+				if ((broad[i][j] != '.') && (set2.contains(broad[i][j]))) {
 					return false;
 				}
 				else {
@@ -36,7 +36,7 @@ class validSudoku {
 				HashSet<Character> set3 = new HashSet<Character>();
 				for (int m = i; m < i + 3; m++)
 					for (int n = j; n < j + 3; n++) {
-						if (broad[m][n] != '.' && set3.contains(broad[m][n])) {
+						if ((broad[m][n] != '.') && (set3.contains(broad[m][n]))) {
 							return false;
 						}
 						else {

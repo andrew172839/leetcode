@@ -39,7 +39,7 @@ class jumpGame {
 			return true;
 		}
 		int far = 0;
-		for (int i = 0; i < A.length && i <= far; i++) {
+		for (int i = 0; (i <= A.length - 1) && (i <= far); i++) {
 			far = Math.max(far, A[i] + i);
 		}
 		return far >= A.length - 1;

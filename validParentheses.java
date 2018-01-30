@@ -6,7 +6,7 @@
 import java.util.Stack;
 class validParentheses {
 	static boolean isValid(String s) {
-		if (s == null || s.length() == 0) {
+		if ((s == null) || (s.length() == 0)) {
 			throw new IllegalArgumentException();
 		}
 		Stack<Character> left = new Stack<Character>();

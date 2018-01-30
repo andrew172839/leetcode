@@ -40,12 +40,12 @@ class setMatrixZeroes {
 				}
 			}
 		}
-		if (rowZero) {
+		if (rowZero == true) {
 			for (int j = 0; j <= column - 1; j++) {
 				matrix[0][j] = 0;
 			}
 		}
-		if (columnZero) {
+		if (columnZero == true) {
 			for (int i = 0; i <= row - 1; i++) {
 				matrix[i][0] = 0;
 			}

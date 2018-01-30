@@ -11,7 +11,7 @@
 //solution 1
 class zigzagConversion {
 	static String convert(String s, int nRows) {
-		if (s == null || nRows <= 0) {
+		if ((s == null) || (nRows <= 0)) {
 			return null;
 		}
 		if (nRows == 1) {
@@ -22,7 +22,7 @@ class zigzagConversion {
 		for (int i = 0; i <= nRows - 1; i++)
 			for (int j = i; j <= s.length() - 1; j = j + size) {
 				result.append(s.charAt(j));
-				if (i != 0 && i != nRows - 1) {
+				if ((i != 0) && (i != nRows - 1)) {
 					if (j - 2 * i + size <= s.length() - 1) {
 						result.append(s.charAt(j - 2 * i + size));
 					}

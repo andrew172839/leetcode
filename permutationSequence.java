@@ -1,5 +1,5 @@
 //Permutation Sequence
-//The set [1,2,3,…,n] contains a total of n! unique permutations.
+//The set [1,2,3,鈥�,n] contains a total of n! unique permutations.
 //By listing and labeling all of the permutations in order,
 //   We get the following sequence (ie, for n = 3):
 //       "123"
@@ -20,7 +20,7 @@ class permutationSequence {
 		num[j] = temp;
 	}
 	static void reverse(int[] num, int i, int j) {
-		while (i < j) {
+		while (i <= j - 1) {
 			swap(num, i, j);
 			i++;
 			j--;

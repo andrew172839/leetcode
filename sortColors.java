@@ -52,12 +52,12 @@ class sortColors {
 		int blue = A.length -1;
 		int i = 0;
 		int temp = 0;
-		if (A.length == 0 || A.length == 1) {
+		if ((A.length == 0) || (A.length == 1)) {
 			return;
 		}
 		while (i <= blue) {
 			if (A[i] == 0) {
-				if (i > red) {
+				if (i >= red + 1) {
 					temp = A[i];
 					A[i] = A[red];
 					A[red] = temp;
@@ -69,7 +69,7 @@ class sortColors {
 				}
 			}
 			if (A[i] == 2) {
-				if (i < blue) {
+				if (i <= blue - 1) {
 					temp = A[blue];
 					A[blue] = A[i];
 					A[i] = temp;

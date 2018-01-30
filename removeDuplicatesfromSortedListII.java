@@ -21,10 +21,10 @@ class removeDuplicatesFromSortedListII {
 		ListNode dummy = new ListNode(0);
 		dummy.next = head;
 		head = dummy;
-		while (head.next != null && head.next.next != null) {
+		while ((head.next != null) && (head.next.next != null)) {
 			if (head.next.value == head.next.next.value) {
 				int value = head.next.value;
-				while (head.next != null && head.next.value == value) {
+				while ((head.next != null) && (head.next.value == value)) {
 					head.next = head.next.next;
 				}
 			}

@@ -6,7 +6,7 @@
 //solution 1
 class removeDuplicatesFromSortedArrayII {
 	static int removeDuplicates(int[] nums) {
-		if (nums == null || nums.length == 0) {
+		if ((nums == null) || (nums.length == 0)) {
 			throw new IllegalArgumentException("");
 		}
 		int result = nums.length;

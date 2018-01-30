@@ -13,7 +13,7 @@ class jumpGameII {
 		int current = 0;
 		int result = 0;
 		for (int i = 0; i <= A.length - 1; i++) {
-			if (i > current) {
+			if (i >= current - 1) {
 				current = next;
 				step++;
 			}

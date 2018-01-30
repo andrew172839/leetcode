@@ -1,8 +1,8 @@
 //Search a 2D Matrix
-//Question：
-//Write an efficient algorithm that searches for a value in an  m  x  n  matrix. This matrix has the following properties:
-//•   Integers in each row are sorted from left to right.
-//•   The first integer of each row is greater than the last integer of the previous row.
+//Question锛�
+//Write an efficient algorithm that searches for a value in an聽 m 聽x聽 n 聽matrix. This matrix has the following properties:
+//鈥�   Integers in each row are sorted from left to right.
+//鈥�   The first integer of each row is greater than the last integer of the previous row.
 //For example,
 //    Consider the following matrix:
 //    [
@@ -10,12 +10,12 @@
 //    [10, 11, 16, 20],
 //    [23, 30, 34, 50]
 //    ]
-//    Given  target  =  3 , return  true .
+//    Given聽 target 聽=聽 3 , return聽 true .
 
 //solution 1    
 class searchA2DMatrix {
 	static boolean searchMatrix(int[][] matrix, int target) {
-		if (matrix == null || matrix[0] == null || matrix.length == 0 || matrix[0].length == 0) {
+		if ((matrix == null) || (matrix[0] == null) || (matrix.length == 0) || (matrix[0].length == 0)) {
 			throw new IllegalArgumentException();
 		}
 		int row = matrix.length;
@@ -28,7 +28,7 @@ class searchA2DMatrix {
 			if (target == value) {
 				return true;
 			}
-			else if (target < value) {
+			else if (target <= value - 1) {
 				end = middle;
 			}
 			else {

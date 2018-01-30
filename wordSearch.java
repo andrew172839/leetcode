@@ -15,10 +15,10 @@ class wordSearch {
 		if (count >= word.length()) {
 			return true;
 		}
-		if (i < 0 || i > board.length - 1 || j < 0 || j > board[0].length) {
+		if ((i < 0) || (i > board.length - 1) || (j < 0) || (j > board[0].length)) {
 			return false;
 		}
-		if (board[i][j] != word.charAt(count) || board[i][j] == '*') {
+		if ((board[i][j] != word.charAt(count)) || (board[i][j] == '*')) {
 			return false;
 		}
 		char c = board[i][j];

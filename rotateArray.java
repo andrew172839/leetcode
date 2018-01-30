@@ -11,7 +11,7 @@
 //solution 1
 class rotateArray {
 	static void rotate(int[] nums, int k) {
-		if (nums == null || nums.length == 0 || k < 0) {
+		if ((nums == null) || (nums.length == 0) || (k < 0)) {
 			throw new IllegalArgumentException();
 		}
 		k = k % nums.length;
@@ -36,7 +36,7 @@ class rotateArray {
 class rotateArray {
 	static void reverse(int[] nums, int left, int right) {
 		int temp = 0;
-		while (left < right) {
+		while (left <= right - 1) {
 			temp = nums[left];
 			nums[left] = nums[right];
 			nums[right] = temp;

@@ -14,7 +14,7 @@ class mergeTwoSortedLists {
 	static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		ListNode dummy = new ListNode(0);
 		ListNode current = dummy;
-		while (l1 != null && l2 != null) {
+		while ((l1 != null) && (l2 != null)) {
 			if (l1.value < l2.value) {
 				current.next = l1;
 				current = current.next;

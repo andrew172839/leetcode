@@ -26,7 +26,7 @@ class subsets {
 		}
 	}
 	static ArrayList<ArrayList<Integer>> subsets(int[] nums) {
-		if (nums == null || nums.length == 0) {
+		if ((nums == null) || (nums.length == 0)) {
 			throw new IllegalArgumentException();
 		}
 		Arrays.sort(nums);

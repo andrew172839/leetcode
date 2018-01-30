@@ -27,7 +27,7 @@ class sumRootToLeafNumbers {
 			return 0;
 		}
 		sum = sum * 10 + root.value;
-		if (root.left == null && root.right == null) {
+		if ((root.left == null) && (root.right == null)) {
 			return sum;
 		}
 		return dfs(root.left, sum) + dfs(root.right, sum);

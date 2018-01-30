@@ -10,12 +10,12 @@
 //solution 1
 class validPalindrome {
 	static boolean isPalindrome (String s) {
-		if (s == null || s.length() == 1) {
+		if ((s == null) || (s.length() == 1) {
 			return true;
 		}
 		int l = 0;
 		int r = s.length() - 1;
-		while (l < r) {
+		while (l <= r - 1) {
 			if (Character.isLetterOrDigit(s.charAt(l)) == false) {
 				l++;
 			}

@@ -27,7 +27,7 @@ class pathSum {
 		if (root == null) {
 			throw new IllegalArgumentException();
 		}
-		if (root.left == null && root.right == null) {
+		if ((root.left == null) && (root.right == null)) {
 			return (root.value == sum);
 		}
 		return (hasPathSum(root.left, sum - root.value) == true || hasPathSum(root.right, sum - root.value) == true);
